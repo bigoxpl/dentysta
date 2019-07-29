@@ -28,8 +28,18 @@
   animation: slideIn 0.5s 1;
 }
 
+#personel h2 span{
+font-weight: 800;
+}
+
+#personel {
+  padding: 50px;
+}
+
 .card {
   border: 0 !important;
+  background: #fafafa !important;
+  box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important
 }
 
 @keyframes fadeIn {
