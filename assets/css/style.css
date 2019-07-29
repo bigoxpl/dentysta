@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+#header {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.13), #007bff7c),
+    url("../img/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#header #headtext {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  animation: fadeIn 1s 1;
+}
+
+#headtext p {
+  font-size: 22px;
+}
+
+#navigation {
+  border-left: 4px solid #007bff;
+  animation: slideIn 0.5s 1;
+}
+
+.card {
+  border: 0 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
