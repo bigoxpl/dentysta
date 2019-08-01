@@ -1,5 +1,6 @@
-while ($(document).scrollTop() > 100) {
-  console.log($(document).scrollTop());
-}
-
-
+$(function() {
+  $(document).scroll(function() {
+    var $nav = $("#navigation");
+    $nav.toggleClass("container mt-4", $(this).scrollTop() < $nav.height());
+  });
+});
