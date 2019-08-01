@@ -28,22 +28,70 @@
   animation: slideIn 0.5s 1;
 }
 
-
 #personel {
   padding: 50px;
 }
 
 .card {
   border: 0 !important;
-  box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 #aboutUs i {
   color: #17a2b8;
+  /* display: inline-block; */
+  border-radius: 100%;
+  border: 2px solid #f3f3f3;
+  padding: 30px;
+}
+
+#aboutUs h4::after {
+  content: "";
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3px;
+  width: 33px;
+  background: #17a2b8;
+  display: block;
+}
+
+
+#zajmujemy::after {
+  content: "";
+  margin-top: 10px;
+  height: 3px;
+  width: 33px;
+  background: #17a2b8;
+  display: block;
+}
+
+#aboutUs i:hover {
+  border: 2px solid #17a2b8;
+  box-shadow: 0px 0px 0px 8px #17a3b82f;
+  transition: 0.5s;
+}
+
+#aboutUs a:hover {
+  text-decoration: none;
+  box-shadow: 0px 2px 0px 0px #17a2b8;
+  opacity: 1;
+  transition: 0.2s;
 }
 
 #aboutUs p {
   color: #6c757d;
+}
+
+#personel h2::after {
+  content: "";
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3px;
+  width: 33px;
+  background: #17a2b8;
+  display: block;
 }
 
 @keyframes fadeIn {
